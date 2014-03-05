@@ -33,7 +33,7 @@ def parameter(displayName, name, datatype, defaultValue=None,
     parameterType=None, direction=None):
     """
     The parameter implementation makes it a little difficult to quickly
-    create parameters with defaults. This method prepopulates the paramaeterType
+    create parameters with defaults. This method prepopulates the parameterType
     and direction parameters and leaves the setting a default value for the
     newly created parameter as optional. The displayName, name and datatype are
     the only required inputs.
@@ -67,7 +67,6 @@ class Toolbox(object):
         # List of tool classes associated with this toolbox
         self.tools = [Tool1]
 
-
 class Tool1(object):
     """
     Add documentation here explaining your tool. The name of this class
@@ -80,6 +79,10 @@ class Tool1(object):
         """
         self.label = 'Tool'
         self.canRunInBackground = False
+        
+        # optional, place in a toolset container, http://joelmccune.com/2013/03/28/toolsets-in-python-toolboxes/
+        self.category = 'Tools to ...'
+        
 
         self.parameters = [
             """
