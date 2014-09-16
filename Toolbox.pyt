@@ -30,7 +30,7 @@ class BusinessLogic(object):
 
 
 def parameter(displayName, name, datatype, defaultValue=None,
-    parameterType=None, direction=None):
+    parameterType="Required", direction="Input"):
     """
     The parameter implementation makes it a little difficult to quickly
     create parameters with defaults. This method prepopulates the parameterType
@@ -43,8 +43,8 @@ def parameter(displayName, name, datatype, defaultValue=None,
         displayName=displayName,
         name=name,
         datatype=datatype,
-        parameterType='Required',
-        direction='Input'
+        parameterType=parameterType,
+        direction=direction
     )
 
     # set new parameter to a default value
