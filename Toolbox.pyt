@@ -80,7 +80,7 @@ class Tool1(object):
         self.label = 'Tool'
         self.canRunInBackground = False
         
-        # optional, place in a toolset container, http://joelmccune.com/2013/03/28/toolsets-in-python-toolboxes/
+        # optional, place in a toolset container, http://joelmccune.com/toolsets-in-python-toolboxes/
         self.category = 'Tools to ...'
         
 
