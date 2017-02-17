@@ -134,6 +134,6 @@ class Tool1(object):
         Reference the business logic captured in your object defined
         separately in the module, preferably above.
         """
-        # instance = businessLogic() # create object instance
+        # instance = BusinessLogic() # create object instance
         # instance.method() # call the method you want
         return
